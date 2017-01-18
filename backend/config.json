@@ -1,0 +1,9 @@
+{
+    "Twilio": {
+        "AccountSid": "AC8a2f4379a5eab5afd56bfe7988355928",
+        "AuthToken": "b3382d7cfee3e47e3c596e0812b3af71"
+    },
+    "Weather": {
+        "Key": "47ab8c0197304728a84193331162112"
+    }
+}
