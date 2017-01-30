@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <style>
+      html{font-size:10px}
+      .splash{
+        width:25rem;
+        margin:0rem auto;
+        text-align:center;
+        font-family:"Futura"
+      }
+
+      button{
+        color:#fff;
+        font-weight:bold;
+        border-width:0;
+        background:#95B9C7;
+        text-transform:uppercase;
+        cursor:pointer;
+        outline:0;
+        transition:background-color 150ms ease-in, color 150ms ease-in}
+      .popup {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+  /* The actual popup */
+      .popup .popuptext {
+        visibility: hidden;
+        width: 160px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -80px;
+      }
+
+        /* Popup arrow */
+      .popup .popuptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+
+        /* Toggle this class - hide and show the popup */
+      .popup .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+      }
+
+        /* Add animation (fade in the popup) */
+      @-webkit-keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
+
+      @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity:1 ;}
+      }
+
+    </style>
+    <meta charset='utf-8'>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <title>wake up, sunshine</title>
+    <link rel=stylesheet type="text/css" href="cwacofy.css">
+    <link rel="shortcut icon" href="rain.png">
+  </head>
+  <body background="4430821-clouds-wallpapers.jpg">
+
+    <h1>wake the f*ck up, sunshine <!--img src="wtfus logo.png" alt="cwacofy" style="float:left;width:100px;height:75px;"--></h1>
+    <h2>join now to wake up every morning with a text telling you the day's weather and what you should wear... with a twist </h2>
+
+    <!-- Contact Form - sent to a Google Sheet -->
+    <div class="splash"><form id='foo' onsubmit="myFunction()">
+      <p>
+        <label>first name:</label><br>
+        <input required class="form-item" id='name' name='name' type='text' placeholder="Motherfucker" autofocus="true">
+      </p><p>
+        <label>gender:</label><br>
+        <input required class="form-item" type="text" name="gender" placeholder="Male">
+      </p><p>
+        <label>phone number:</label><br>
+        <input required class="form-item"  id='phone' name='phone' type='text' pattern='[\(]\d{3}[\)]\d{3}[\-]\d{4}|\d{10}' title='(999)999-9999' placeholder='(999)999-9999'>
+      </p><p>
+        <label>wake up time:</label><br>
+        <input required class="form-item"  id='time' type="time" name='time' placeholder="8:00">
+      </p><p>
+        <label>zip code:</label><br>
+        <input required class="form-item" id='zip' type='text' name='zip' placeholder="80085" pattern="\d{5}" title='zip code must have 5 digits'><br>
+      </p>
+        <button type='submit'>Give Me Your God Damn Info</button>
+        <script>
+          function myFunction() {
+            alert("Submitted! Welcome to the best decision of your shitty ass life.");
+          }
+        </script>
+  </script>
+</div>
+    </form>
+  </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script src='google-sheet.js'></script>
+</html>
